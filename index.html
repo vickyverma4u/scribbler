@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/common.css" />
   </head>
   <body>
     <!-- TODO: Include all your code for the header and home page here -->
@@ -31,7 +32,12 @@
       </div>
     </header>
     <main>
-      <button class="btn-main">All Posts</button>
+      <button
+        class="btn-main"
+        onclick="window.location.href='/html/postslist.html'"
+      >
+        All Posts
+      </button>
       <button class="btn-main" onclick="openCreatePostModal()">
         Create Post
       </button>

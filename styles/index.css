@@ -1,19 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
 
 main {
@@ -22,21 +10,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#left {
-  margin: 10px;
-}
-
-#logo {
-  font-family: "Montez", cursive;
-  color: blue;
-  font-size: 28px;
-  padding: 5px 10px;
-}
-
-#logo-desc {
-  font-family: "Ubuntu Mono", monospace;
 }
 
 .modal {
@@ -76,14 +49,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.btn-header {
-  padding: 5px 10px;
-  margin: 10px 5px;
-  width: 90px;
-  background-color: blue;
-  color: white;
 }
 
 .btn-main {
