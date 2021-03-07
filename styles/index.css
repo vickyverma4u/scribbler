@@ -105,3 +105,39 @@ main {
   color: white;
   border: none;
 }
+
+.label {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.triangle {
+  visibility: hidden;
+  position: absolute;
+  z-index: 3;
+  top: 43.5px;
+  left: 90px;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  height: 13px;
+}
+
+.errortext {
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: 70px;
+  background-color: white;
+  colour: #666;
+  border: 1px solid black;
+  padding: 0 3px;
+  border-radius: 5px;
+}
+
+.fa-exclamation-triangle {
+  color: #f4d03f;
+}

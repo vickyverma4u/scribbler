@@ -14,6 +14,13 @@ btn.onclick = function () {
 
 close.onclick = function () {
   modal.style.display = "none";
+  let elements = document.querySelectorAll(".errortext");
+  let triangles = document.querySelectorAll(".triangle");
+
+  for (let i = 0; i < 4; i++) {
+    elements[i].style.visibility = "hidden";
+    triangles[i].style.visibility = "hidden";
+  }
 };
 
 // Get the modal
@@ -42,4 +49,50 @@ function openCreatePostModal() {
 function closeCreatePostModal() {
   var modal3 = document.getElementById("create-post-modal");
   modal3.style.display = "none";
+}
+
+function signUpSubmit() {
+  let formElement = document.getElementById("name").value;
+  let count = 0;
+  if (formElement.length === 0) {
+    count++;
+    document.getElementsByClassName("errortext")[0].style.visibility =
+      "visible";
+    document.getElementsByClassName("triangle")[0].style.visibility = "visible";
+  }
+
+  formElement = document.getElementById("username").value;
+  if (formElement.length === 0) {
+    count++;
+    document.getElementsByClassName("errortext")[1].style.visibility =
+      "visible";
+    document.getElementsByClassName("triangle")[1].style.visibility = "visible";
+  }
+
+  formElement = document.getElementById("password").value;
+  if (formElement.length === 0) {
+    count++;
+    document.getElementsByClassName("errortext")[2].style.visibility =
+      "visible";
+    document.getElementsByClassName("triangle")[2].style.visibility = "visible";
+  }
+
+  formElement = document.getElementById("confirm-password").value;
+  if (formElement.length === 0) {
+    count++;
+    document.getElementsByClassName("errortext")[3].style.visibility =
+      "visible";
+    document.getElementsByClassName("triangle")[3].style.visibility = "visible";
+  }
+
+  if (count === 0) {
+    modal.style.display = "none";
+    let elements = document.querySelectorAll(".errortext");
+    let triangles = document.querySelectorAll(".triangle");
+
+    for (let i = 0; i < 4; i++) {
+      elements[i].style.visibility = "hidden";
+      triangles[i].style.visibility = "hidden";
+    }
+  }
 }
