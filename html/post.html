@@ -39,30 +39,18 @@
     </header>
 
     <main>
-      <h2>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h2>
+      <input type="text" id="title" name="title" readonly></input>
       <div class="header">
-        <p class="name">Srishti Gupta</p>
-        <button>Edit&nbsp;<i class="fas fa-edit"></i></button>
+        <p class="name" id="name"></p>
+        <button id="edit" onclick="edit()">Edit&nbsp;<i class="fas fa-edit"></i></button>
+        <button id="save" onclick="save()" style="display: none;">Save&nbsp;<i class="fas fa-save"></i></button>
       </div>
       <div class="post">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-          expedita minima aliquid impedit laborum maiores, tempore aliquam totam
-          quae qui amet suscipit ex sunt voluptas, et obcaecati accusamus
-          nostrum, error beatae odio doloremque! Maxime, fugit modi! At facere
-          placeat voluptatem, nostrum cupiditate nulla. Id quia quisquam rerum,
-          minus eos cumque earum modi dignissimos voluptates alias magnam, animi
-          quos ratione sed ipsa excepturi voluptatibus doloremque inventore
-          autem obcaecati. Magni magnam repudiandae optio impedit voluptatem
-          sint numquam dolores blanditiis ipsum, doloribus eos. Quis aspernatur
-          sint possimus numquam quidem commodi rerum quaerat earum
-          exercitationem nostrum sequi officia voluptatibus, ipsum minus laborum
-          nemo id.
-        </p>
+        <div id="postContent"></div>
       </div>
       <div class="like">
-        <button><i class="fas fa-thumbs-up"></i>&nbsp;Liked</button>
-        <p>1 person likes this!</p>
+        <button onclick="like()"><i class="fas fa-thumbs-up"></i>&nbsp;Like</button>
+        <p>Be the first one to like this!</p>
       </div>
       <div class="comment">
         <textarea
@@ -72,12 +60,14 @@
           rows="5"
           placeholder="Leave a comment..."
         ></textarea>
-        <button>Comment</button>
+        <button onclick="postComment()">Comment</button>
       </div>
-      <div class="all-comments">
-        <h3>All Comments</h3>
-        <p>hi</p>
+
+      <h3>All Comments</h3>
+
+      <div id="all-comments">
       </div>
     </main>
+    <script src="../scripts/post.js"></script>
   </body>
 </html>

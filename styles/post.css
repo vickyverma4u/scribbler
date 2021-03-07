@@ -1,5 +1,13 @@
-h2 {
+main {
+  width: 98%;
+  margin: auto;
+}
+
+#title {
+  width: 100%;
+  border: none;
   text-align: center;
+  font-size: large;
 }
 
 .name {
@@ -27,13 +35,15 @@ button {
 }
 
 .post {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-.post p {
+#postContent {
   text-align: justify;
+  padding: 2px;
+  width: 100%;
+  min-height: 5em;
+  overflow: auto;
 }
 
 .like {
@@ -60,7 +70,11 @@ textarea {
   margin-bottom: 15px;
 }
 
-.all-comments p {
+h3 {
+  margin-bottom: 10px;
+}
+
+#all-comments p {
   border: 10px solid lightgray;
   padding: 5px;
   margin-top: 10px;
