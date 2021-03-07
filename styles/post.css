@@ -1,0 +1,68 @@
+h2 {
+  text-align: center;
+}
+
+.name {
+  font-size: large;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button {
+  border: none;
+  background-color: red;
+  width: 80px;
+  color: white;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.post {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.post p {
+  text-align: justify;
+}
+
+.like {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.comment {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  display: block;
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+.all-comments {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.all-comments p {
+  border: 10px solid lightgray;
+  padding: 5px;
+  margin-top: 10px;
+  width: 75%;
+}
