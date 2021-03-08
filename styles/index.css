@@ -12,84 +12,12 @@ main {
   align-items: center;
 }
 
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-  line-height: 1.5;
-  max-width: 300px;
-}
-
-.modal-content-create-post {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-  line-height: 1.5;
-  max-width: 600px;
-}
-
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #666;
-  margin-bottom: 5px;
-}
-
 .btn-main {
   padding: 5px;
   justify-content: center;
   margin: 10px;
   width: 100px;
   background-color: gold;
-}
-
-.form-group {
-  margin-top: 5px;
-  color: #555;
-}
-
-.form-group label {
-  display: block;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 5px;
-  background-color: #eee;
-  border: none;
-}
-
-.form-group textarea {
-  width: 100%;
-  padding: 5px;
-  background-color: #eee;
-  border: none;
-}
-
-.modal-content button {
-  width: 100%;
-  margin-top: 15px;
-  padding: 3px;
-  background-color: #00cc00;
-  color: white;
-  border: none;
 }
 
 #create-post-btn {
@@ -105,56 +33,4 @@ main {
   background-color: #00cc00;
   color: white;
   border: none;
-}
-
-.label {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.triangle {
-  visibility: hidden;
-  position: absolute;
-  z-index: 3;
-  top: 43px;
-  left: 90px;
-  background-color: white;
-  /* rotating square area to show it up as arrow */
-  transform: rotate(45deg);
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-  height: 14px;
-}
-
-.errortext {
-  visibility: hidden;
-  position: absolute;
-  z-index: 2;
-  top: 50px;
-  left: 60px;
-  background-color: white;
-  colour: #666;
-  border: 1px solid black;
-  padding: 0 3px;
-  border-radius: 5px;
-}
-
-.fa-exclamation-triangle {
-  color: #f4d03f;
-}
-
-.footer {
-  text-align: center;
-  font-size: small;
-  font-weight: bold;
-  margin: 5px;
-}
-
-.footer span {
-  color: blue;
-}
-
-.footer span:hover {
-  cursor: pointer;
 }

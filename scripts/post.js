@@ -1,12 +1,13 @@
 showPost();
 let likes = 0;
 
+// load content from session storage
 function showPost() {
   document
     .getElementById("title")
     .setAttribute("value", sessionStorage.getItem("title"));
 
-  document.getElementById("name").innerHTML = sessionStorage.getItem(
+  document.getElementById("name2").innerHTML = sessionStorage.getItem(
     "userName"
   );
 
@@ -16,6 +17,7 @@ function showPost() {
     .trim();
 }
 
+// allow editing of post title and content
 function edit() {
   let title = document.getElementById("title");
   title.style.border = "1px solid red";
@@ -29,6 +31,7 @@ function edit() {
   document.getElementById("save").style.display = "";
 }
 
+// save changes to post
 function save() {
   let title = document.getElementById("title");
   title.style.border = "none";
@@ -42,6 +45,7 @@ function save() {
   document.getElementById("edit").style.display = "";
 }
 
+// add likes to post
 function like() {
   likes++;
   document.querySelector(".like button").innerHTML =
@@ -53,6 +57,7 @@ function like() {
   }
 }
 
+// post comments in chronological order
 function postComment() {
   let comment = document.getElementById("comment");
   let commentList = document.getElementById("all-comments");

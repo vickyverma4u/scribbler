@@ -23,14 +23,19 @@
 
   <body>
     <!-- TODO: Include code for header here -->
+    <!-- Header section -->
     <header>
       <div id="left">
         <p id="logo">ScriBBler</p>
         <p id="logo-desc">Explore, Imagine, Create</p>
       </div>
       <div id="right">
-        <button class="btn-header" id="btn-signup">Sign Up</button>
-        <button class="btn-header" id="btn-signin">Sign In</button>
+        <button class="btn-header" id="btn-signup" onclick="openSignUpModal()">
+          Sign Up
+        </button>
+        <button class="btn-header" id="btn-signin" onclick="openSignInModal()">
+          Sign In
+        </button>
       </div>
     </header>
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
@@ -196,7 +201,147 @@
       </div>
     </div>
 
+    <!-- Sign Up Modal -->
+    <div id="signup-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Get Started</h3>
+          <i
+            class="fas fa-times"
+            id="btn-signup-close"
+            onclick="closeSignUpModal()"
+          ></i>
+        </div>
+
+        <hr />
+
+        <!-- The span tag with triangle class is for displaying the arrow on error messages -->
+        <div class="form-group">
+          <label for="name" class="label"
+            >Name<span class="triangle">&nbsp;&nbsp;&nbsp;</span
+            ><span class="errortext"
+              ><i class="fas fa-exclamation-triangle"></i>&nbsp;Please fill out
+              this field.</span
+            ></label
+          >
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="username" class="label"
+            >Username<span class="triangle">&nbsp;&nbsp;&nbsp;</span
+            ><span class="errortext"
+              ><i class="fas fa-exclamation-triangle"></i>&nbsp;Please fill out
+              this field.</span
+            ></label
+          >
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter your username"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="label"
+            >Password<span class="triangle">&nbsp;&nbsp;&nbsp;</span
+            ><span class="errortext"
+              ><i class="fas fa-exclamation-triangle"></i>&nbsp;Please fill out
+              this field.</span
+            ></label
+          >
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password" class="label"
+            >Confirm Password<span class="triangle">&nbsp;&nbsp;&nbsp;</span
+            ><span class="errortext"
+              ><i class="fas fa-exclamation-triangle"></i>&nbsp;Please fill out
+              this field.</span
+            ></label
+          >
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            placeholder="Re-enter your password"
+          />
+        </div>
+
+        <button onclick="signUpSubmit()">Sign Up</button>
+      </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div id="signin-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome Back!</h2>
+          <i
+            class="fas fa-times"
+            id="btn-signin-close"
+            onclick="closeSignInModal()"
+          ></i>
+        </div>
+
+        <hr />
+
+        <div class="form-group">
+          <label for="username2" class="label"
+            >Username<span class="triangle">&nbsp;&nbsp;&nbsp;</span
+            ><span class="errortext"
+              ><i class="fas fa-exclamation-triangle"></i>&nbsp;Please fill out
+              this field.</span
+            ></label
+          >
+          <input
+            type="text"
+            name="username2"
+            id="username2"
+            placeholder="Enter your username"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password2" class="label"
+            >Password<span class="triangle">&nbsp;&nbsp;&nbsp;</span
+            ><span class="errortext"
+              ><i class="fas fa-exclamation-triangle"></i>&nbsp;Please fill out
+              this field.</span
+            ></label
+          >
+          <input
+            type="password"
+            name="password2"
+            id="password2"
+            placeholder="Enter your password"
+          />
+        </div>
+
+        <button onclick="signInSubmit()">Sign In</button>
+
+        <div class="footer">
+          Not a member? <span onclick="openSignUpModal()">Sign Up</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Javascript link -->
+    <script src="../scripts/common.js"></script>
     <script src="../scripts/postslist.js"></script>
   </body>
 </html>
