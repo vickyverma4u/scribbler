@@ -112,6 +112,7 @@ main {
   left: 0;
 }
 
+
 .triangle {
   visibility: hidden;
   position: absolute;
@@ -119,6 +120,7 @@ main {
   top: 43.5px;
   left: 90px;
   background-color: white;
+  /* rotating square area to show it up as arrow */
   transform: rotate(45deg);
   border-left: 1px solid black;
   border-top: 1px solid black;
@@ -140,4 +142,15 @@ main {
 
 .fa-exclamation-triangle {
   color: #f4d03f;
+}
+
+.footer {
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.footer span {
+  color: blue;
 }

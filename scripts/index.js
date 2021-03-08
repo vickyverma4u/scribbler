@@ -1,56 +1,44 @@
-// Get the modal
-var modal = document.getElementById("signup-modal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("btn-signup");
-
-// Get the <span> element that closes the modal
-var close = document.getElementById("btn-signup-close");
-
-// When the user clicks on the button, open the modal
-btn.onclick = function () {
-  modal.style.display = "block";
+// Function to open Sign Up modal
+function openSignUpModal() {
+  document.getElementById("signin-modal").style.display = "none";
+  document.getElementById("signup-modal").style.display = "block";
 };
 
-close.onclick = function () {
-  modal.style.display = "none";
+// Function to close Sign Up modal
+function closeSignUpModal() {
+  document.getElementById("signup-modal").style.display = "none";
   let elements = document.querySelectorAll(".errortext");
   let triangles = document.querySelectorAll(".triangle");
 
+  // hiding error messages on closing the modal:
   for (let i = 0; i < 4; i++) {
     elements[i].style.visibility = "hidden";
     triangles[i].style.visibility = "hidden";
   }
 };
 
-// Get the modal
-var modal2 = document.getElementById("signin-modal");
-
-// Get the button that opens the modal
-var btn2 = document.getElementById("btn-signin");
-
-// Get the <span> element that closes the modal
-var close2 = document.getElementById("btn-signin-close");
-
-// When the user clicks on the button, open the modal
-btn2.onclick = function () {
-  modal2.style.display = "block";
+// function to open Sign In modal
+function openSignInModal() {
+  document.getElementById("signin-modal").style.display = "block";
 };
 
-close2.onclick = function () {
-  modal2.style.display = "none";
+// function to close Sign In modal
+function closeSignInModal() {
+  document.getElementById("signin-modal").style.display = "none";
 };
 
+// function to open create post modal
 function openCreatePostModal() {
-  var modal3 = document.getElementById("create-post-modal");
-  modal3.style.display = "block";
+  document.getElementById("create-post-modal").style.display = "block";
 }
 
+// function to close create post modal
 function closeCreatePostModal() {
-  var modal3 = document.getElementById("create-post-modal");
-  modal3.style.display = "none";
+  document.getElementById("create-post-modal").style.display = "none";
 }
 
+// submit button functionality on sign up modal
+// checks if the fields have been filled, and displays error messages if required
 function signUpSubmit() {
   let formElement = document.getElementById("name").value;
   let count = 0;
@@ -85,11 +73,13 @@ function signUpSubmit() {
     document.getElementsByClassName("triangle")[3].style.visibility = "visible";
   }
 
+  // close the modal if all entries are filled:
   if (count === 0) {
     modal.style.display = "none";
     let elements = document.querySelectorAll(".errortext");
     let triangles = document.querySelectorAll(".triangle");
 
+    // hide error messages:
     for (let i = 0; i < 4; i++) {
       elements[i].style.visibility = "hidden";
       triangles[i].style.visibility = "hidden";
