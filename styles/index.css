@@ -20,7 +20,6 @@ main {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
@@ -49,6 +48,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #666;
+  margin-bottom: 5px;
 }
 
 .btn-main {
@@ -61,6 +62,7 @@ main {
 
 .form-group {
   margin-top: 5px;
+  color: #555;
 }
 
 .form-group label {
@@ -79,7 +81,6 @@ main {
   padding: 5px;
   background-color: #eee;
   border: none;
-  color: white;
 }
 
 .modal-content button {
@@ -112,19 +113,18 @@ main {
   left: 0;
 }
 
-
 .triangle {
   visibility: hidden;
   position: absolute;
   z-index: 3;
-  top: 43.5px;
+  top: 43px;
   left: 90px;
   background-color: white;
   /* rotating square area to show it up as arrow */
   transform: rotate(45deg);
   border-left: 1px solid black;
   border-top: 1px solid black;
-  height: 13px;
+  height: 14px;
 }
 
 .errortext {
@@ -132,7 +132,7 @@ main {
   position: absolute;
   z-index: 2;
   top: 50px;
-  left: 70px;
+  left: 60px;
   background-color: white;
   colour: #666;
   border: 1px solid black;
@@ -153,4 +153,8 @@ main {
 
 .footer span {
   color: blue;
+}
+
+.footer span:hover {
+  cursor: pointer;
 }

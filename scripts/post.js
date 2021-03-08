@@ -49,7 +49,7 @@ function like() {
   if (likes === 1) {
     document.querySelector(".like p").innerHTML = likes + " person likes this!";
   } else {
-    document.querySelector(".like p").innerHTML = likes + " persons like this!";
+    document.querySelector(".like p").innerHTML = likes + " people like this!";
   }
 }
 

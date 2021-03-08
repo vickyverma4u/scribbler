@@ -67,10 +67,6 @@ i {
   color: #666;
 }
 
-i:hover {
-  cursor: pointer;
-}
-
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
